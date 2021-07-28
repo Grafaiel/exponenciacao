@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-color:rgb(17, 86, 102);
+    --primary-color-darker: rgb(9, 46, 56);
+    --primary-color-active: rgb(124, 124, 124);
+
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    font-family: 'Open sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+p {
+    text-align: center;
+    /* background-color: var( --primary-color-darker); */
+    margin: -1.5rem 0px 0px -1px;
+    padding: 1rem;
+    color: #fff;
+}
+
+h1 {
+    /* topo | horizontal | inferior */
+    margin: 0 auto 2em;;
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.inputs{
+    padding: .5rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+label {
+    width: 7%;
+    margin: -1.5rem 8px 0px 0px;
+}
+
+input, button{
+    width: 30%;
+}
+
+
+.inputs input {
+    font-size: 1rem;
+    /* topo | direita | inferior | esquerda */
+    margin: .1rem 4rem 0 -3rem;
+
+}
+
+input:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+#calcula {
+    margin: 1rem 3rem;
+    align-self: flex-end;
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    width: 50%;
+    height: 50px;
+    cursor: pointer;
+}   
+
+#calcula:hover {
+    background: var(--primary-color-darker);
+}
+
+#calcula:focus {
+    background: var(--primary-color-darker);
+}
+
+#calcula:active {
+    background: var(--primary-color-active);
+}
+
+.paragrafo-resultado {
+    background: rgb(115, 218, 12);
+    padding: 10px 20px;
+}
+
